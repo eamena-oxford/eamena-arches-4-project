@@ -1,0 +1,121 @@
+saving
+saving
+saving
+saving
+saving
+saving
+Unable to save. Please verify your input is valid [Tile id: ]                      [Exception message: TileValidationError: -0200-01-14 None is not in the correct format, make sure it is in this format: %Y-%m-%d or set the date format in settings.DATE_IMPORT_EXPORT_FORMAT. This data was not imported.]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 120, in post
+    tile.save(request=request)
+  File "/home/archesdev/archesproject/arches/arches/app/models/tile.py", line 303, in save
+    self.validate([])
+  File "/home/archesdev/archesproject/arches/arches/app/models/tile.py", line 227, in validate
+    raise TileValidationError(_("{0}".format(error_instance["message"])))
+TileValidationError: u'-0200-01-14 None is not in the correct format, make sure it is in this format: %Y-%m-%d or set the date format in settings.DATE_IMPORT_EXPORT_FORMAT. This data was not imported.'
+]
+saving
+Saving tile failed [Tile id: ]                      [Exception message: IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(06b4c201-9fe8-4f56-b3fe-d55f9fa1065a) is not present in table "tiles".
+]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 147, in post
+    update_system_settings_cache(tile)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 262, in commit
+    self._commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(06b4c201-9fe8-4f56-b3fe-d55f9fa1065a) is not present in table "tiles".
+
+]
+Saving tile failed [Tile id: ]                      [Exception message: IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 147, in post
+    update_system_settings_cache(tile)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 262, in commit
+    self._commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+
+]
+Saving tile failed [Tile id: ]                      [Exception message: IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 147, in post
+    update_system_settings_cache(tile)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 262, in commit
+    self._commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+
+]
+Saving tile failed [Tile id: ]                      [Exception message: IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 147, in post
+    update_system_settings_cache(tile)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 262, in commit
+    self._commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+
+]
+Saving tile failed [Tile id: ]                      [Exception message: IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+]                      [Exception trace: Traceback (most recent call last):
+  File "/home/archesdev/archesproject/arches/arches/app/views/tile.py", line 147, in post
+    update_system_settings_cache(tile)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/transaction.py", line 223, in __exit__
+    connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 262, in commit
+    self._commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/archesdev/archesproject/arches/env/lib/python2.7/site-packages/django/db/backends/base/base.py", line 236, in _commit
+    return self.connection.commit()
+IntegrityError: insert or update on table "tiles" violates foreign key constraint "tiles_parenttileid_b85c3d9c_fk_tiles_tileid"
+DETAIL:  Key (parenttileid)=(9c1f4cd8-261a-42fc-b246-abf7890807c8) is not present in table "tiles".
+
+]
+saving
+saving
+saving
+Dispatching Couch Proxy
+Dispatching Couch Proxy
+Dispatching Couch Proxy
+Dispatching Couch Proxy
+Dispatching Couch Proxy
+Dispatching Couch Proxy
+Dispatching Couch Proxy
